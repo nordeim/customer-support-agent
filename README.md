@@ -59,7 +59,7 @@ The Customer Support AI Agent is a comprehensive solution designed to automate a
 
 ### Backend
 - **FastAPI**: Modern, fast web framework for building APIs
-- **Python 3.11**: Latest stable Python version
+- **Python 3.12**: Latest stable Python version
 - **Microsoft Agent Framework**: AI agent orchestration and tool management
 - **SQLAlchemy**: ORM for database operations
 - **Alembic**: Database migration tool
