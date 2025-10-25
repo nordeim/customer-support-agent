@@ -1,0 +1,46 @@
+/* frontend/src/components/EscalationNotice/EscalationNotice.module.css */
+.escalationNotice {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.noticeContent {
+  flex: 1;
+}
+
+.noticeContent h3 {
+  margin: 0 0 0.5rem 0;
+  color: #856404;
+  font-size: 1.1rem;
+}
+
+.noticeContent p {
+  margin: 0 0 1rem 0;
+  color: #856404;
+}
+
+.ticketInfo,
+.waitTime {
+  font-size: 0.9rem;
+  color: #856404;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #856404;
+  padding: 0;
+  line-height: 1;
+}
+
+.closeButton:hover {
+  color: #664d03;
+}
