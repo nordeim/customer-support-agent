@@ -1,0 +1,327 @@
+# =============================================================================
+# Customer Support AI Agent - Git Ignore File
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+customer_support.db
+test_customer_support.db
+
+# Chroma vector database
+chroma_db/
+.chroma/
+
+# Uploads
+uploads/
+attachments/
+
+# SSL certificates
+ssl/
+*.pem
+*.key
+*.crt
+
+# Docker
+.dockerignore
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Backup files
+*.bak
+*.backup
+backups/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+ $RECYCLE.BIN/
+
+# Local configuration
+config.local.js
+config.local.json
+local_settings.py
+
+# Monitoring data
+prometheus_data/
+grafana_data/
+alertmanager_data/
+
+# Redis dump
+dump.rdb
+
+# PostgreSQL
+*.sql
+pg_data/
+
+# Application specific
+data/
+cache/
+sessions/
+tokens/
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Test artifacts
+test-results/
+coverage/
+.coverage
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Profiling
+*.prof
+*.profile
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Media files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+
+# Fonts
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Images (unless tracked)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+
+# Configuration overrides
+override.yml
+override.yaml
+override.json
+
+# Secrets
+secrets/
+.secrets
+*.key
+*.pem
+*.crt
+*.p12
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Kubernetes
+*.kubeconfig
+
+# Helm
+charts/*.tgz
+
+# Local development
+.local/
+local/
+dev/
+development/
+
+# Staging
+staging/
+stage/
+
+# Production
+prod/
+production/
+
+# Feature branches
+feature-*/
+hotfix-*/
+release-*/
+
+# WIP
+wip/
+work-in-progress/
+
+# Experimental
+experimental/
+exp/
