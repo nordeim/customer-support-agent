@@ -1,0 +1,8 @@
+# Basic initialization
+python scripts/init_db.py
+
+# Drop and recreate with seed data
+python scripts/init_db.py --force --seed
+
+# Run migrations first
+python scripts/init_db.py --migrate --seed
