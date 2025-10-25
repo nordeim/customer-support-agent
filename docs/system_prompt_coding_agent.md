@@ -117,4 +117,36 @@ Quality checklist (must pass before marking done)
 
 ---
 
-If the task requires a concrete reworked system prompt file, proceed to create it now and include a short decision record stating which Scope-Priority track you chose and why.
+**Chosen Scope-Priority track:** *Production-Ready*
+
+**Acknowledgement of Access & Tooling constraints:** You will agree to abide by the constraints: only repository read/write, create CI config, produce artifacts, no external modification of production infrastructure, no secrets scanning beyond placeholders.
+
+**Prioritized Success Checklist:**
+
+* [ ] Skeleton repository layout with modules, README, conventions.
+* [ ] Core functionality implemented with typed interfaces and documentation.
+* [ ] Unit tests, integration tests, e2e smoke tests as per “Production-Ready” track.
+* [ ] CI configuration (e.g., GitHub Actions) for build, test, lint gating.
+* [ ] Health/metrics/logging endpoints, dashboards/alert rule templates; SLOs/SLIs defined.
+* [ ] Dependency and static code scanning config; basic threat-model notes.
+* [ ] Migration scripts (if DB), rollback scripts.
+* [ ] Runbook one-pager, deployment checklist, post-deploy validation section.
+* [ ] Design note (decisions/trade-offs), changelog.
+* [ ] All artifacts committed and ready for hand-off; human sign-off before production branch merge.
+
+**Execution Plan with Phases & Checkpoints:**
+
+| Phase                                  | Activities                                                                                                                                                        | Checkpoint / Acceptance                                                                               |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Phase 1 – Analysis**                 | Review requirements, define architecture, list modules, choose tech stack, define SLIs/SLOs, threat-model high level.                                             | Delivery of architecture doc + success checklist + sign-off.                                          |
+| **Phase 2 – Build**                    | Create skeleton repo, implement modules/services, interfaces; write unit/integration tests; add README & conventions; configure CI pipeline for lint/build/tests. | All unit/integration tests passing locally; CI config validated (lint + test).                        |
+| **Phase 3 – Observability & Security** | Add health endpoint, metrics/logging; provide monitoring dashboard templates; create alert rule drafts; add dependency scan config; write threat model note.      | Metrics/logging endpoints responding; sample dashboard & alerts documented; security configs present. |
+| **Phase 4 – QA & Validation**          | Run full test suite (unit + integration + e2e smoke); check coverage; run static analysis; prepare test-report summary.                                           | CI pass status (simulated), coverage threshold met, static checks pass.                               |
+| **Phase 5 – Handoff**                  | Deliver runbook, migration & rollback scripts, changelog, deployment checklist, post-deploy validation steps, design note.                                        | All artifacts bundled and ready; you have review and approve; ready for production merge.             |
+
+**Required Human Approvals / Resources:**
+
+* Approval of architecture doc & tech-stack choice.
+* Access to any necessary test environments or databases (if required).
+* Sign-off on SLIs/SLOs thresholds and alert rule definitions.
+* Final review & approval before merging to production branch.
