@@ -8,14 +8,14 @@ awesome understanding! now, please think deeper and think harder to deeply and m
 
 4)  RAG with embedding model https://huggingface.co/google/embeddinggemma-300m and chroma as vector database.  
 
-5) Use python package for attachment processing. refer to https://raw.githubusercontent.com/microsoft/markitdown/refs/heads/main/README.md 
+5) Use python package for attachment processing. Refer to https://raw.githubusercontent.com/microsoft/markitdown/refs/heads/main/README.md 
 
 Read this:  
 https://raw.githubusercontent.com/nordeim/Agent-Framework/refs/heads/main/Agent_Framework_Programming_Guide_2.md
 
 ---
 
-awesome planning! please confirm that you have actually fetched and read the following references/resources in your meticulous planning:
+awesome planning! Please confirm that you have actually fetched and read the following references/resources in your meticulous planning:
 
 [1]: https://raw.githubusercontent.com/nordeim/Agent-Framework/refs/heads/main/Agent_Framework_Programming_Guide_2.md "raw.githubusercontent.com"  
 [2]: https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview?utm_source=chatgpt.com "Introduction to Microsoft Agent Framework | Microsoft Learn"  
@@ -25,4 +25,13 @@ If yes, please meticulously plan and then proceed with phase 2.
 
 ---
 
-awesome job so far! please think deeper and think harder to meticulously explore thoroughly and systematically how best to create a detailed, comprehensive, informative and attractive `README.md` for the GitHub repo https://github.com/nordeim/customer-support-agent.git that host this project. include a section to describe the application architecture with a file hierarchy diagram listing key files with their description, a mermaid diagram to describe the user and application interaction, and a mermaid diagram to show the application logic flow, a section on deployment. try to make it an awesome, complete and useful `README.md` for the project. then meticulously create a plan to create the `README.md`. review and validate the plan before proceeding cautiously to execute.
+awesome job so far! Please think deeper and think harder to meticulously explore thoroughly and systematically how best to create a detailed, comprehensive, informative and attractive `README.md` for the GitHub repo https://github.com/nordeim/customer-support-agent.git that hosts this project. include a section to describe the application architecture with a file hierarchy diagram listing key files with their description, a mermaid diagram to describe the user and application interaction, and a mermaid diagram to show the application logic flow, and a section on deployment. Try to make it an awesome, complete, and useful `README.md` for the project. Then meticulously create a plan to create the `README.md`. Review and validate the plan before proceeding cautiously to execute.
+
+---
+
+awesome job so far! Please meticulously plan how best to proceed to Sprint B (RAG + knowledge base ingestion). review and validate the plan before proceeding.
+
+---
+
+awesome plan, please proceed meticulously according to your plan.
+
