@@ -1,0 +1,68 @@
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    services:
+      chroma:
+        image: chromadb/chroma:latest
+        ports:
+          - 8001:8000
+        env:
+          CHROMA_SERVER_HOST: 0.0.0.0
+          CHROMA_SERVER_HTTP_PORT: 8000
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Install dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+        pip install pytest pytest-cov flake8 bandit safety
+    
+    - name: Lint with flake8
+      run: |
+        cd backend
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    
+    - name: Security check with bandit
+      run: |
+        cd backend
+        bandit -r . -f json -o bandit-report.json || true
+    
+    - name: Check dependencies with safety
+      run: |
+        cd backend
+        safety check --json --output safety-report.json || true
+    
+    - name: Run tests
+      run: |
+        cd backend
+        pytest --cov=app --cov-report=xml --cov-report=html
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./backend/coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+    
+    - name: Build Docker image
+      run: |
+        cd backend
+        docker build -t customer-support-agent .
