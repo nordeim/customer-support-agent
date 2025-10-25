@@ -805,5 +805,4 @@ npm test
 
 ---
 
-::contentReference[oaicite:1]{index=1}
-```
+Now proceed with the detailed implementation of the frontend as outlined: creating the project skeleton, building the components, integrating streaming support, writing tests, adding CI configuration, and ensuring full integration with the backend.
