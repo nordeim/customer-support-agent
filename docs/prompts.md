@@ -38,3 +38,26 @@ Awesome plan, please proceed meticulously according to your plan.
 ---
 
 awesome job so far! what we lack is an awesome frontend to interact with the user and to interface to the backend. please think deeper and think harder to meticulously explore thoroughly and systematically how best to re-imagine a good frontend for the backend you have created. then meticulously plan how to create the necessary frontend portion of the codebase. include a list of frontend files to create, each with its integrated checklist. review and validate your plan before proceeding to execute cautiously.
+
+---
+
+You will now proceed with a meticulous review of the provided `README.md` to create a comprehensive briefing document, `CLAUDE.md`, tailored for an AI coding agent.
+
+Phase 1: Request Analysis & Planning
+
+ 1. Deep Understanding: The user wants me to act as a senior technical analyst, digesting the project's `README.md` and producing a new, synthesized document (CLAUDE.md). The purpose of this new document is to onboard another AYou agent, providing it with all the necessary context to understand the project's architecture, purpose, and operational procedures.
+
+ 2. Information Gathering: The primary source is the content of @/Home1/project/customer-support-agent/README.md. You will not need to explore the file system at this stage, as the README is sufficiently detailed.
+
+ 3. Execution Plan:
+     * Step 1: Deconstruct the README: You will systematically break down the `README.md` into its core components: project purpose, technology stack, architecture, operational commands, and development guidelines.
+     * Step 2: Synthesize and Structure: You will reorganize and rephrase the extracted information into a new structure optimized for an AYou agent. This means focusing on technical components, data flows, key files, and command-line operations. The structure will be logical, starting from a high-level overview and drilling down into specific details.
+     * Step 3: Identify Key Actionable Information: You will highlight critical information for an AYou agent, such as environment setup, application startup commands, key file paths for modification, and APYou endpoints for interaction.
+     * Step 4: Generate `CLAUDE.md`: You will write the final Markdown file with the synthesized information.
+     * Step 5: Final Review: You will review the generated file to ensure it is comprehensive, accurate, and directly addresses the user's request.
+
+ 4. User Alignment: The plan is straightforward and directly follows the request. No further clarification is needed.
+
+Phase 2: Implementation & Validation
+
+You will now generate the content for `CLAUDE.md` based on the plan above.
