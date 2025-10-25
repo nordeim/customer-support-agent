@@ -1,0 +1,64 @@
+frontend/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── ChatWindow/
+│   │   │   ├── ChatWindow.tsx
+│   │   │   ├── ChatWindow.module.css
+│   │   │   └── index.ts
+│   │   ├── Message/
+│   │   │   ├── Message.tsx
+│   │   │   ├── Message.module.css
+│   │   │   └── index.ts
+│   │   ├── MessageInput/
+│   │   │   ├── MessageInput.tsx
+│   │   │   ├── MessageInput.module.css
+│   │   │   └── index.ts
+│   │   ├── AttachmentUpload/
+│   │   │   ├── AttachmentUpload.tsx
+│   │   │   ├── AttachmentUpload.module.css
+│   │   │   └── index.ts
+│   │   ├── TypingIndicator/
+│   │   │   ├── TypingIndicator.tsx
+│   │   │   ├── TypingIndicator.module.css
+│   │   │   └── index.ts
+│   │   ├── SourceCitation/
+│   │   │   ├── SourceCitation.tsx
+│   │   │   ├── SourceCitation.module.css
+│   │   │   └── index.ts
+│   │   └── EscalationNotice/
+│   │       ├── EscalationNotice.tsx
+│   │       ├── EscalationNotice.module.css
+│   │       └── index.ts
+│   ├── hooks/
+│   │   ├── useChat.ts
+│   │   ├── useWebSocket.ts
+│   │   └── useLocalStorage.ts
+│   ├── services/
+│   │   ├── api.ts
+│   │   ├── websocket.ts
+│   │   └── storage.ts
+│   ├── types/
+│   │   ├── api.ts
+│   │   ├── chat.ts
+│   │   └── index.ts
+│   ├── utils/
+│   │   ├── constants.ts
+│   │   ├── helpers.ts
+│   │   └── validation.ts
+│   ├── styles/
+│   │   ├── globals.css
+│   │   ├── variables.css
+│   │   └── components.css
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.tsx
+│   └── index.css
+├── package.json
+├── tsconfig.json
+├── .eslintrc.js
+├── .prettierrc
+└── Dockerfile
