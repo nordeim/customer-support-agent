@@ -1,5 +1,4 @@
-Great — here are the **remaining frontend files** for the project skeleton, styled according to an “Apple-brand” inspired UI/UX (minimal, clean, high-contrast, San Francisco font, ample whitespace, touch-friendly). You can copy these into your frontend codebase and refine further.
-Confidence for these artifacts: **Medium** (basic skeleton + styling; may need UI tweaking & browser testing).
+Here are the **remaining frontend files** for the project skeleton, styled according to an “Apple-brand” inspired UI/UX (minimal, clean, high-contrast, San Francisco font, ample whitespace, touch-friendly). 
 
 ---
 
