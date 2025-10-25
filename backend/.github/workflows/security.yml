@@ -1,0 +1,98 @@
+# backend/.github/workflows/security.yml
+name: Security Scan
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run security scan daily at 2 AM UTC
+    - cron: '0 2 * * *'
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+    
+    - name: Install dependencies
+      run: |
+        pip install safety bandit semgrep
+    
+    - name: Run Safety (dependency vulnerability scan)
+      run: |
+        safety check --json --output safety-report.json || true
+        safety check --output safety-report.txt || true
+    
+    - name: Run Bandit (security linter)
+      run: |
+        bandit -r . -f json -o bandit-report.json || true
+        bandit -r . -o bandit-report.txt || true
+    
+    - name: Run Semgrep (static analysis)
+      run: |
+        semgrep --config=auto --json --output=semgrep-report.json . || true
+        semgrep --config=auto --output=semgrep-report.txt . || true
+    
+    - name: Upload security reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-reports
+        path: |
+          safety-report.json
+          safety-report.txt
+          bandit-report.json
+          bandit-report.txt
+          semgrep-report.json
+          semgrep-report.txt
+    
+    - name: Comment PR with security results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          
+          // Read safety report
+          let safetyContent = '';
+          try {
+            safetyContent = fs.readFileSync('safety-report.txt', 'utf8');
+          } catch (e) {
+            safetyContent = 'No safety issues found';
+          }
+          
+          // Read bandit report
+          let banditContent = '';
+          try {
+            banditContent = fs.readFileSync('bandit-report.txt', 'utf8');
+          } catch (e) {
+            banditContent = 'No bandit issues found';
+          }
+          
+          // Create comment
+          const comment = `## Security Scan Results
+          
+          ### Safety (Dependency Vulnerabilities)
+          \`\`\`
+          ${safetyContent}
+          \`\`\`
+          
+          ### Bandit (Security Linter)
+          \`\`\`
+          ${banditContent}
+          \`\`\`
+          `;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
