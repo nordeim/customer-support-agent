@@ -1,3 +1,20 @@
+awesome understanding! now, please think deeper and think harder to deeply and meticulously research and explore how to re-imagine a production-ready customer support AI agent with:
+
+1) REACT frontend with friendly chatbot
+
+2) Microsoft Agent Framework implemented as python FASTAPI backend, use the programming guide in the URL link given below.
+
+3)  use sqlite to implement memory system for operating needs
+
+4)  RAG with embedding model https://huggingface.co/google/embeddinggemma-300m and chroma as vector database.  
+
+5) Use python package for attachment processing. refer to https://raw.githubusercontent.com/microsoft/markitdown/refs/heads/main/README.md 
+
+Read this:  
+https://raw.githubusercontent.com/nordeim/Agent-Framework/refs/heads/main/Agent_Framework_Programming_Guide_2.md
+
+---
+
 awesome planning! please confirm that you have actually fetched and read the following references/resources in your meticulous planning:
 
 [1]: https://raw.githubusercontent.com/nordeim/Agent-Framework/refs/heads/main/Agent_Framework_Programming_Guide_2.md "raw.githubusercontent.com"  
