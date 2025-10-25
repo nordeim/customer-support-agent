@@ -1,0 +1,73 @@
+/* frontend/src/components/Message/Message.module.css */
+.message {
+  display: flex;
+  margin-bottom: 1rem;
+  max-width: 80%;
+}
+
+.message.user {
+  align-self: flex-end;
+}
+
+.message.assistant {
+  align-self: flex-start;
+}
+
+.messageContent {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.message.user .messageContent {
+  background-color: #1976d2;
+  color: white;
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.sender {
+  font-weight: bold;
+}
+
+.messageText {
+  line-height: 1.5;
+}
+
+.messageText p {
+  margin: 0 0 0.5rem 0;
+}
+
+.messageText p:last-child {
+  margin-bottom: 0;
+}
+
+.sources {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sources h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.escalationNotice {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  color: #856404;
+  font-size: 0.9rem;
+}
