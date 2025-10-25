@@ -1,0 +1,13 @@
+# monitoring/grafana/provisioning/dashboards/dashboard.yml
+apiVersion: 1
+
+providers:
+  - name: 'customer-support-dashboards'
+    orgId: 1
+    folder: 'Customer Support'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards
