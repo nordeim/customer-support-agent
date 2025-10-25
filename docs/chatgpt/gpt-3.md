@@ -1,4 +1,4 @@
-Understood — I’ll proceed to create the initial set of files for **Phase 2 Sprint A**. Below are the contents of key files. You can copy each into your repository workspace.
+Proceed to create the initial set of files for **Phase 2 Sprint A**. Below are the contents of key files. You can copy each into your repository workspace.
 
 ---
 
@@ -511,14 +511,3 @@ def test_add_and_get_messages(temp_db):
     assert msgs[1].sender == "agent"
 ```
 
----
-
-## Next Steps
-
-* I’ll commit these files in the repository structure.
-* After commit, please review the structure and confirm or request modifications.
-* Once approved, I’ll move to Sprint B (RAG + knowledge base ingestion).
-
-**Confidence level for these artifacts:** High.
-
-Let me know once you’ve reviewed or if you’d like adjustments.
