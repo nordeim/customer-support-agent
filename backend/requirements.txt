@@ -1,0 +1,14 @@
+# backend/requirements.txt
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+sqlalchemy==2.0.23
+alembic==1.12.1
+pydantic==2.5.0
+python-multipart==0.0.6
+prometheus-client==0.19.0
+agent-framework==0.1.0  # Placeholder version
+chromadb==0.4.18
+torch==2.1.1
+transformers==4.36.0
+markitdown==0.0.1  # Placeholder version
+python-dotenv==1.0.0
