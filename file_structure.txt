@@ -1,0 +1,80 @@
+customer-support-agent/
+├── backend/
+│   ├── app/
+│   │   ├── agents/
+│   │   │   ├── __init__.py
+│   │   │   ├── chat_agent.py          # Main agent implementation
+│   │   │   └── agent_factory.py       # Factory for creating agents
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── dependencies.py        # FastAPI dependencies
+│   │   │   ├── routes/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── chat.py            # Chat endpoints
+│   │   │   │   ├── health.py          # Health check endpoints
+│   │   │   │   └── metrics.py         # Metrics endpoints
+│   │   │   └── middleware.py          # Custom middleware
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py              # Configuration management
+│   │   │   ├── logging.py             # Logging configuration
+│   │   │   └── security.py            # Security utilities
+│   │   ├── db/
+│   │   │   ├── __init__.py
+│   │   │   ├── models.py              # SQLAlchemy models
+│   │   │   ├── database.py            # Database connection
+│   │   │   └── migrations/            # Alembic migration scripts
+│   │   ├── tools/
+│   │   │   ├── __init__.py
+│   │   │   ├── memory_tool.py         # Memory management tool
+│   │   │   ├── rag_tool.py            # RAG implementation tool
+│   │   │   ├── attachment_tool.py     # Attachment processing tool
+│   │   │   └── escalation_tool.py     # Human escalation tool
+│   │   ├── vector_store/
+│   │   │   ├── __init__.py
+│   │   │   ├── chroma_client.py       # ChromaDB client
+│   │   │   └── embeddings.py          # Embedding model wrapper
+│   │   └── main.py                    # FastAPI application entry point
+│   ├── tests/
+│   │   ├── unit/
+│   │   │   ├── test_memory_tool.py
+│   │   │   ├── test_rag_tool.py
+│   │   │   ├── test_attachment_tool.py
+│   │   │   └── test_escalation_tool.py
+│   │   ├── integration/
+│   │   │   ├── test_chat_flow.py
+│   │   │   └── test_rag_flow.py
+│   │   └── conftest.py                # Pytest configuration
+│   ├── scripts/
+│   │   ├── init_db.py                 # Database initialization
+│   │   ├── populate_kb.py             # Knowledge base population
+│   │   └── migrate.py                 # Database migration
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── docker-compose.yml
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ChatWindow.tsx
+│   │   │   ├── Message.tsx
+│   │   │   ├── AttachmentUpload.tsx
+│   │   │   └── TypingIndicator.tsx
+│   │   ├── services/
+│   │   │   └── api.ts                 # API client
+│   │   ├── types/
+│   │   │   └── index.ts               # TypeScript type definitions
+│   │   ├── App.tsx
+│   │   └── index.tsx
+│   ├── package.json
+│   └── tsconfig.json
+├── docs/
+│   ├── api.md
+│   ├── deployment.md
+│   └── architecture.md
+├── .github/
+│   └── workflows/
+│       └── ci.yml                     # GitHub Actions CI
+├── docker-compose.yml                 # Full system composition
+├── README.md
+└── .gitignore
