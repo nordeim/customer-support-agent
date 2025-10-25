@@ -1,0 +1,52 @@
+/* frontend/src/components/SourceCitation/SourceCitation.module.css */
+.sourceCitation {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.sourceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sourceHeader:hover {
+  background-color: #e9ecef;
+}
+
+.sourceTitle {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #666;
+  padding: 0;
+}
+
+.sourceContent {
+  padding: 0.5rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.sourceContent p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.relevance {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+}
