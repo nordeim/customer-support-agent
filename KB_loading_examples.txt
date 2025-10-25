@@ -1,0 +1,8 @@
+# Basic population
+python scripts/populate_kb.py --documents-dir ./docs/knowledge-base
+
+# Recursive processing with custom chunk size
+python scripts/populate_kb.py --documents-dir ./docs --recursive --chunk-size 500
+
+# Clear existing and repopulate
+python scripts/populate_kb.py --documents-dir ./docs --clear
