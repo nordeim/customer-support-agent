@@ -33,6 +33,10 @@ awesome job so far! Please meticulously plan how best to proceed to Sprint B (RA
 
 ---
 
+awesome job so far! please meticulously plan and then create the complete replacement files for the remaining backend agent code files that will correctly and properly integrate with these tools.
+
+---
+
 Awesome plan, please proceed meticulously according to your plan.
 
 ---
